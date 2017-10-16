@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/gamer"
+            android:hint="請輸入名子" />
+
+        <TextView
+            android:text="請輸入名子以開始遊戲"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup"
+            android:weightSum="1">
+
+            <RadioButton
+                android:text="剪刀"
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
+                android:id="@+id/radioButton5"
+                android:textSize="18sp"
+                android:layout_weight="0.05" />
+
+            <RadioButton
+                android:text="石頭"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton6"
+                android:layout_weight="0.05"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:text="布"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton7"
+                android:layout_weight="0.05"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:text="開始遊戲"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/play"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="58dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="名子"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView6"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:text="xxx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="勝利者"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text="Ｗin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/winner"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="85dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="我方出拳"
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:text="石頭"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/myMora"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="電腦出拳"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:text="布"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/computerMora"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/background_dark" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
